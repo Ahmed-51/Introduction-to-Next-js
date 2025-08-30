@@ -24,7 +24,7 @@ export default function SideNav() {
             "use server";
             await signOut({
               redirect: true,
-              redirectTo: process.env.NEXTAUTH_URL || "/"
+              redirectTo: `${process.env.NEXT_PUBLIC_BASE_URL}/`
             });
           }}
         >
